@@ -5,27 +5,130 @@
         <meta name="description" content="Devin Cress - Paramedic, engineering student, DIY'er" />
         <link rel="stylesheet" href="resources/style_main.css" />
 
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     </head>
 
+
     <body>
-        <img id="self" src="resources/self.jpg"/>
+        <div id="main_wrapper">
+            <img id="self" src="resources/self.jpg"/>
 
-        <div class="main">
-            
-            <h1 class="main">
-                Devin Cress
-            </h1>
+            <div class="main">
+                
+                <h1 class="main">
+                    Devin Cress
+                </h1>
 
-            <div class="icons">
-                <a href="automotive.html"><img class="icons" src="resources/icons8-engine-100.png" title="Automotive"/></a>
-                <a href="renovations.html"><img class="icons" src="resources/icons8-hammer-100-2.png" title="Renovation work"/></a>
-                <a href="ems.html"><img class="icons" src="resources/icons8-ambulance-100.png" title="EMS"/></a>
-                <a href="art.html"><img class="icons" src="resources/icons8-drawing-100.png" title="Art"/></a>
-                <a href="photography.html"><img class="icons" src="resources/icons8-camera-100.png" title="Photography"/></a>
-                <a href="programming.html"><img class="icons" src="resources/icons8-code-100.png" title="Programming"/></a>
-                <a href="engineering.html"><img class="icons" src="resources/icons8-engineering-100.png" title="Engineering Projects"/></a>
+                <div class="icons">
+                    <a href="#automotive"><img class="icons" src="resources/icons8-engine-100.png" title="Automotive"/></a>
+                    <a href="#renovations"><img class="icons" src="resources/icons8-hammer-100-2.png" title="Renovation work"/></a>
+                    <a href="#ems"><img class="icons" src="resources/icons8-ambulance-100.png" title="EMS"/></a>
+                    <a href="#art"><img class="icons" src="resources/icons8-drawing-100.png" title="Art"/></a>
+                    <a href="#photography"><img class="icons" src="resources/icons8-camera-100.png" title="Photography"/></a>
+                    <a href="#programming"><img class="icons" src="resources/icons8-code-100.png" title="Programming"/></a>
+                    <a href="#engineering"><img class="icons" src="resources/icons8-engineering-100.png" title="Engineering Projects"/></a>
+                </div>
             </div>
         </div>
+        <div class="footer">
+            <p style="color: #FFFFFF; text-align: center;">Icons from <a href="http://icons8.com">icons8.com</a></p>
+        </div>
+        <div class="sections" id="automotive">
+            <div class="heading">
+                <h2>
+                    Automotive
+                </h2>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper" style="width: 40vh; height: auto; margin: 3vh; float: left;">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="resources/automotive/ase_logo.png"></div>
+                <div class="swiper-slide"><img src="resources/automotive/58781506_10217366429130915_7803822518745169920_o.jpg"/></div>
+                <div class="swiper-slide"><img src="resources/automotive/59295418_10217344461741744_6216069462710288384_n.jpg"/></div>
+                <div class="swiper-slide"><img src="resources/automotive/IMG_20170421_154918.jpg"/></div>
+                
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- end slider container-->
+
+            <div class="section_right">
+                <p>
+                    Three years of professional automtotive experience and over a decade under the hood.
+                </p>
+            </div>
+        </div>
+        <div class="sections" id="renovations">
+            <div class="heading">
+                <h2>
+                    Renovations
+                </h2>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper" style="width: 40vh; height: auto; margin: 3vh; float: left;">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" style="height: auto;">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="resources/renovations/51936842_10216789351384332_6394233085629562880_o.jpg"></div>
+                <div class="swiper-slide"><img src="resources/renovations/56539131_10217276530243499_2703309831225212928_n.jpg"/></div>
+                <div class="swiper-slide"><img src="resources/renovations/57511422_10217276530603508_89208515142352896_n.jpg"/></div>
+                <div class="swiper-slide"><img src="resources/renovations/IMG_20180714_173343.jpg"/></div>
+                
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- end slider container-->
+
+            <div class="section_right">
+                <p>
+                    As a life-long DIY'er, no project is too big. 
+                </p>
+            </div>
+        </div>
+        <div class="sections" id="ems">
+            
+        </div>
+        <div class="sections" id="art">
+            
+        </div>
+        <div class="sections" id="photography">
+            
+        </div>
+        <div class="sections" id="programming">
+            
+        </div>
+        <div class="sections" id="engineering">
+            
+        </div>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            //direction: 'vertical',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
     </body>
 
 </html>
