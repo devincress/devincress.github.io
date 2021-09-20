@@ -14,6 +14,8 @@ img#self {
 }
 
 h1.main {
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #FFFFFF;
   font-size: 8vw;
@@ -26,7 +28,7 @@ div.main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 100vh;
+  top: 30%;
 }
 
 div.icons {
@@ -37,4 +39,6 @@ div.icons {
 }
 
 img.icons {
+  height: 10vh;
 }
+
