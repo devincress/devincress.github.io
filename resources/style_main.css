@@ -78,7 +78,7 @@ div.section_wrapper {
   flex-wrap: wrap;
   background: rgba(0,0,0,0.8);
   height: 50vh;
-  align-items: center;;
+  align-items: center;
 }
 
 div.section_right {
@@ -187,7 +187,8 @@ div#photography {
   max-height: 40vh;
 }
 
-img.bigger_slide {
-  max-width: 60vh;
-  max-height: 60vh;
+@media screen and (max-width: 600px) {
+  div.section_wrapper {
+    height: 70vh;
+  }
 }
