@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+div#body_wrapper {
+  overflow: hidden;
+}
+
 div#main_wrapper {
   height: 100vh;
 }
@@ -62,7 +66,7 @@ img.icons {
 
 div.sections {
   height: 98vh;
-  width: 100%;
+  width: 100vw;
   display:inline-flex;
   justify-content: center;
   flex-wrap: wrap;
