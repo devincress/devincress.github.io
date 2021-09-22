@@ -153,6 +153,16 @@ div#programming {
   background-origin: content-box;
 }
 
+img#github {
+  width: 30vh;
+  border: solid 0.5vh #3485fd;
+  border-radius: 1vh;
+}
+
+img#github:hover {
+  border: inset #3485fd;
+}
+
 div#art {
   background-image: url("art/pens-1867899_1920.jpg");
   background-size: cover;
@@ -190,5 +200,9 @@ div#photography {
 @media screen and (max-width: 600px) {
   div.section_wrapper {
     height: 70vh;
+  }
+
+  p {
+    text-align: center;
   }
 }
