@@ -187,15 +187,3 @@ img.bigger_slide {
   max-width: 60vh;
   max-height: 60vh;
 }
-
-@media only screen and (max-width: 600px) {
-  div.section_wrapper {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  div.bigger_div_mobile {
-    width: 95%;
-  }
-}
