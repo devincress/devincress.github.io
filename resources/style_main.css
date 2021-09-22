@@ -5,7 +5,8 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 100%;
+  padding: 0;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -61,6 +62,7 @@ img.icons {
 
 div.sections {
   height: 98vh;
+  width: 100%;
   display:inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -182,12 +184,18 @@ div#photography {
 }
 
 img.bigger_slide {
-  max-width: 70vh;
+  max-width: 60vh;
   max-height: 60vh;
 }
 
 @media only screen and (max-width: 600px) {
   div.section_wrapper {
-    height: 80vh;
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.bigger_div_mobile {
+    width: 95%;
   }
 }
