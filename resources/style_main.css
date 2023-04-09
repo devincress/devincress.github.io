@@ -22,6 +22,10 @@ div.main {
   margin: 0;
   border: 0;
   padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
 }
 
 img#self {
@@ -34,7 +38,7 @@ h1.main {
   padding: 0;
   text-align: center;
   color: #FFFFFF;
-  font-size: 8vw;
+  font-size: 6vh;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   opacity: 0.8;
   text-shadow: #000000 5px 5px 5px;
@@ -46,22 +50,48 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-div.main {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
+#intro {
+  width: 85%;
+  padding: 1vw;
+  margin: auto;
 }
 
-div.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+div.menu {
+  width:fit-content;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  font-size: 6vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
 }
 
+a.menu {
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-shadow: #000000 5px 5px 5px;
+  text-decoration: none;
+}
+
+a.menu:hover {
+  color:firebrick;
+
+}
 img.icons {
   height: 10vh;
+}
+
+p.about {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  text-shadow:#000000 2px 2px 2px;
+  margin-top: 0px;
+}
+
+p.description {
+  font-size: medium;
 }
 
 div.sections {
@@ -178,6 +208,119 @@ div#photography {
 }
 
 
+/* For desktop ------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  div.main {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+  }
+  
+  img#self {
+    float: right;
+    height: 99vh;
+  }
+  
+  h1.main {
+    margin: 0 ;
+    padding: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0.8;
+    text-shadow: #000000 5px 5px 5px;
+  }
+  
+  h2 {
+    font-size: 6vh;
+    margin: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #intro {
+    width: 85%;
+    padding: 1vw;
+    margin: auto;
+  }
+  
+  div.menu {
+    display: block;
+    float: left;
+    margin-top: 16px;
+    padding-right: 3vw;
+    text-align: left;
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+  }
+  
+  a.menu {
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: #000000 5px 5px 5px;
+    text-decoration: none;
+  }
+  
+  a.menu:hover {
+    color:firebrick;
+  
+  }
+  img.icons {
+    height: 10vh;
+  }
+  
+  p.about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    text-shadow:#000000 2px 2px 2px;
+    margin-top: 1em;
+  }
+  
+  p.description {
+    font-size: medium;
+  }
+  
+  div.sections {
+    height: 98vh;
+    width: 100vw;
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  div.section_wrapper {
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.8);
+    height: 50vh;
+    align-items: center;
+  }
+  
+  div.section_right {
+    width: 40vh;
+    margin: 3vh;
+    padding: 0;
+  }
+  
+  div.heading {
+    background: #FFFFFF;
+    width: 100vw;
+    overflow: hidden;
+    max-height: 10vh;
+    text-align: center;
+    padding-top: 3vh;
+  }
+}
+
+/* End for desktop -------------------------------------------- */
+
 .swiper {
   width: 50vh;
   height: auto;
@@ -206,3 +349,4 @@ div#photography {
     text-align: center;
   }
 }
+

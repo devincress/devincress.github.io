@@ -1,0 +1,29 @@
+html {
+    background: #191919;
+    width: 100vw;
+}
+  
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+  
+div#body_wrapper {
+    overflow: hidden;
+}
+
+div#rocket_layout {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow:10px, 5px, 5px, black;
+}
+
+div.main {
+    background-color:lightgray;
+}
+
+h2.main {
+    text-align: center;
+}
