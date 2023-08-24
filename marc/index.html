@@ -15,21 +15,78 @@
         <div id="body_wrapper">
             <div id="rocket_layout">
                 <div id="header">
-                    <a href="/index.html"><img src="resources/marc_logo.png</a>
-                    <h3 class="main" style="color:#E87722"><i>A Virginia Tech <a href="https://amp-lab.org" style="color:#861F41">AMP Lab</a> Project</i></h3>
+                    <a href="index.html"><img src="resources/logo_full_darkbg.png" style="width:400px"></a>
+                    <p style="color:#E87722; margin: 0; margin-left: 15px; margin-bottom: 10px; padding: 1px; font-size: 18px;"><i>A Virginia Tech <a href="https://amp-lab.org" style="color:#861F41">AMP Lab</a> Project</i></p>
                 </div>
                 <div class="main">
 
-                   
+                   <h2>Project Members</h2>
                     
+                   <p>
+                    <b>Devin Cress</b>
+                    <br/>
+                    Virginia Tech Electrical Engineering (2025) <a href="mailto:dcress94@vt.edu">dcress94@vt.edu</a>
+                    <br/><br/>
+                    <b>Alex Betz</b>
+                    <br/>
+                    Virginia Tech Electrical Engineering (2025) <a href="mailto:abetz01@vt.edu">abetz01@vt.edu</a>
+                   </p>
 
-                    <p class="main">
+                   <hr/>
+
+                   <h2>Summary</h2>
+
+                    <p>
                         The Modular Amateur Rocket Computer, or MARC, is an ARM-based flight computer for use in high-powered amateur rockets. The computer will continously monitor and log linear acceleration, rotation, altitude, and compass heading, as well as deploy recovery devices and ignite additional stage motors.
                         <br/><br/>
                         As this is a long-term project and we would like to add additional features in the future (namely telemetry), a modular design has been chosen in which multiple boards are stacked and interconnected via header pins. Four header pins will supply 3.3V, ground, and two I2C lines to every board in the stack, allowing new hardware additions without completely redesigning everything.
                         <br/><br/>
                         The MARC will eventually be used in the high powered rocket that we are developing alongside this project - the Lima II.
                     </p>
+
+                    <hr/>
+
+                    <h2>Components</h2>
+
+                    <p>
+                        The initial MARC design will include the following boards:
+                    </p>
+
+                        <h3>Sensor Board</h3>
+                        <p>Contains the MARC's sensor suite, including accelerometer/gyrometer, magnetometer, and altimeter.</p>
+                        <ul>
+                            <li>1 Accelerometer/gyrometer IC - LSM6DSO32XTR</li>
+                            <li>Magnetometer IC - IIS2MDCTR</li>
+                            <li>1 Barometer IC - BMP390</li>
+                            <li>1 4-pin passthrough header</li>
+                            <li>6 100nF 0603 ceramic capacitors</li>
+                            <li>1 220nF 0603 ceramic capacitor</li>
+                            <li>1 10uF 0805 ceramic capacitor</li>
+                        </ul>
+
+                        <h3>Battery Board</h3>
+                        <P>Contains USB charging circuitry for a connected LiPo battery and supplies 3.3V power to the board stack.</P>
+                        <ul>
+                            <li>1 1000mAh LiPo battery - ASR00012</li>
+                            <li>1 3v3 low-dropout voltage regulator - LD29080DT33R</li>
+                            <li>1 I2C battery gauge IC - MAX17048</li>
+                            <li>1 LiPo battery charge IC - MCP73832T</li>
+                            <li>1 MicroUSB port - 10118194</li>
+                            <li>1 0603 red LED</li>
+                            <li>Various resistors and capacitors (TBD)</li>
+                        </ul>
+                        
+                        <h3>Main Processor Board</h3>
+                        <p>The brains of MARC, this board contains the STM32 microcontroller. It will also include SRAM for temporary data storage, an SD card slot for data retreival, MOSFETS for motor and deployment charge ignition, and LEDs and a piezo buzzer for status indication.</p>
+                        <ul>
+                            <li>1 STM32F401RET7</li>
+                            <li>1 SRAM IC</li>
+                            <li>1 MicroSD card slot - 104031-0811</li>
+                            <li>3 n-channel MOSFETs</li>
+                            <li>3 screw headers</li>
+                            <li>1 piezo buzzer - CMI-9705-0380-SMT-TR</li>
+                            <li>5 dip switches</li>
+                        </ul>
                 </div>
             </div>
         </div>

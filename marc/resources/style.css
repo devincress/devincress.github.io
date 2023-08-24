@@ -1,0 +1,27 @@
+html {
+    background: #191919;
+}
+
+#body_wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main{
+    background: #FFFFFF;
+}
+
+div.main {
+    padding: 10px;
+}
+
+p {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+h2,h3 {
+    margin: 2px;
+    padding: 10px;
+    padding-bottom: 1px;
+}
