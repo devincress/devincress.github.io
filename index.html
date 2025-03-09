@@ -1,299 +1,437 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Devin Cress</title>
-        <meta name="description" content="Devin Cress - Paramedic, engineering student, DIY'er" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="resources/style_main.css" />
-        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Cress</title>
+
+    <link rel="stylesheet" href="resources/css/timeline_style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000;
+            margin: 0;
+        }
+
+        #landing_container {
+            width: 90%;
+            height: 90vh;
+            max-width: 800px;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 5vh;
+            background-color: #202020;
+            background-image: url("resources/self.jpg");
+            background-repeat: no-repeat;
+            background-position: right; 
+
+            background-size: contain;
+        }
+
+        .container {
+          width:fit-content;
+          margin: auto;
+          text-align: center;
+        }
 
 
-    <body>
-        <div id="body_wrapper">
-            <div id="main_wrapper">
-                <img id="self" src="resources/self.jpg"/>
+        @keyframes fadeToWhite {
+            0% { color: firebrick; }
+            100% { color: white; }
+        }
 
-                <div class="main" id="intro">
-                    
-                    <h1 class="main">
-                        Devin Cress
-                    </h1>
 
-                    <div class="menu">
-                        <a href="#engineering" class="menu">Engineering Projects</a><br/>
-                        <a href="#programming" class="menu">Programming</a><br/>
-                        <a href="#renovations" class="menu">Home Renovation</a><br/>
-                        <a href="#automotive" class="menu">Automotive Work</a><br/>
-                        <a href="#ems" class="menu">Fire and EMS</a><br/>
-                        <a href="#more" class="menu">More</a><br/>
-                    </div>
+        h1 {
+            font-size: 8vh;
+            text-align: left;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #FFFFFF;
+            text-shadow: 5px 5px 5px #000000;
+            animation: fadeToWhite 5s ease-in-out forwards;
+        }
 
-                    <p class="about">I'm a 29-year-old aspiring electrical engineer currently studying at Virginia Tech. With experience working as a paramedic and previously as an automotive technician, I have a diverse set of skills and a passion for finding creative solutions to complex problems.
-                        <br/><br/>
-                        In my free time, I love to get my hands dirty with DIY projects, including house remodeling, building furniture, and 3D printing anything I can. I also love to weightlift, cook, bake, ski, and SCUBA dive. I've even dabbled in art and photography.
-                        <br/><br/>
-                        Throughout my journey, I've developed a strong work ethic and a desire to continue learning and growing. Here, you'll find a collection of my projects, design work, and other images that showcase my skills and wide range of interests.</p>
+        h2 {
+          margin: 20px;
+          margin-top: 50px;
+          color: #FFFFFF;
+          text-shadow: 5px 5px 5px #000000;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
 
-                    
-                    <div class="about">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <!--<p style="color: #FFFFFF; text-align: center; font-size:medium;">Icons from <a href="http://icons8.com">icons8.com</a></p>-->
-            </div>
+        p {
+          color: #FFFFFF;
+        }
 
-            <!-- Begin Engineering Section-->
-            <div class="sections" id="engineering">
-                <div class="heading">
-                    <h2>
-                        Engineering
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><a href="/marc" style="border:2px;"><img src="resources/engineering/marc_whitebg.png"></a></div>
-                        <div class="swiper-slide"><img src="resources/engineering/highres.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/engineering/PXL_20210921_062650688.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/engineering/PXL_20210813_194209192.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/engineering/Screenshot_2020-10-07-16-48-23.png"></div>
-                        <div class="swiper-slide"><img src="resources/engineering/PXL_20210813_193040867_exported_1995.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/engineering/PXL_20210920_183225881.jpg"></div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
+        p#intro {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
 
-                    <div class="section_right">
-                        <p>
-                            Parametric design, FDM 3D printing, embedded systems, amateur rocketry, and more.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End Engineering Section-->
+        a.menu {
+        color: #FFFFFF;
+        font-size: 3.5vh;
+        line-height: 2;
+        text-shadow: #000000 5px 5px 5px;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
 
-            <!-- Begin Programming Section-->
-            <div class="sections" id="programming">
-                <div class="heading">
-                    <h2>
-                        Programming
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="resources/programming/Java_programming_language_logo.svg"></div>
-                        <div class="swiper-slide"><img src="resources/programming/python_symbol.png"></div>
-                        <div class="swiper-slide"><img src="resources/programming/800px-C_Programming_Language.png"></div>
-                        <div class="swiper-slide"><img src="resources/programming/htmlcss.png"></div>
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
+        @media (max-width: 60rem) {
+            a.menu {
+                font-size: 2.5vh;
+            }
+        }
 
-                    <div class="section_right" style="text-align: center;">
-                        <a href='https://github.com/devincress'><img src="resources/programming/GitHub_Logo_White.png" id="github" title="Visit my GitHub"/></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End Programming Section-->
+        a.menu:hover {
+        color:firebrick;
+        }
 
-            <!-- Begin Renovations Section-->
-            <div class="sections" id="renovations">
-                <div class="heading">
-                    <h2>
-                        Renovations
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper" style="max-height: 50vh;">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="resources/renovations/PXL_20210828_005534090.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/IMG_20170825_092334_2.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/51936842_10216789351384332_6394233085629562880_o.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/renovations/56539131_10217276530243499_2703309831225212928_n.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/57511422_10217276530603508_89208515142352896_n.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/IMG_20170825_092339.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/IMG_20180315_190935.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/IMG_20180714_173343.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/renovations/IMG_20190616_163724.jpg"/></div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 15vw;
+            }
 
-                    <div class="section_right">
-                        <p>
-                            I've extensively remodeled my mid-1800's farmhouse.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End Renovations Section-->
-            
-            <!-- Begin Automotive Section-->
-            <div class="sections" id="automotive">
-                <div class="heading">
-                    <h2>
-                        Automotive
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="resources/automotive/ase_logo.png"></div>
-                        <div class="swiper-slide"><img src="resources/automotive/902225_10200467436466660_1189948133_o.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/automotive/37815_1436861559754_2461114_n.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/automotive/317385_2284993602525_1419252371_n.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/automotive/58781506_10217366429130915_7803822518745169920_o.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/automotive/59295418_10217344461741744_6216069462710288384_n.jpg"/></div>
-                        <div class="swiper-slide"><img src="resources/automotive/IMG_20170421_154918.jpg"/></div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
+            p {
+                font-size: 5vw;
+            }
 
-                    <div class="section_right">
-                        <p>
-                            Three years of professional automotive experience as an ASE-certified technician, and more than a decade under the hood.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End Automotive Section-->
+            .tile {
+                width: 120px;
+                height: 120px;
+                font-size: 0.9rem;
+            }
 
-            <!-- Begin EMS Section-->
-            <div class="sections" id="ems">
-                <div class="heading">
-                    <h2>
-                        EMS/Fire
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="resources/ems/staroflife.png"></div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
+            #left-main {
+                width: 100%;
+            }
+        }
 
-                    <div class="section_right">
-                        <p>
-                            Virginia-certified Paramedic and firefighter with nine years in fire & EMS.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End EMS Section-->
-            
-            <!-- Begin More Section-->
-            <div class="sections" id="more">
-                <div class="heading">
-                    <h2>
-                        More
-                    </h2>
-                </div>
-                <div class="section_wrapper">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="resources/PXL_20230408_204259378.MP.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/art/167152_1631932396403_1179443940_31514132_4566536_n.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/photography/tree_spotted_mountains_by_dc4894-d4t6vew.jpg" class="bigger_slide"></div>
-                        <div class="swiper-slide"><img src="resources/art/167152_1631932436404_1179443940_31514133_107323_n.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/art/246769_1904910300680_1179443940_31907816_1455565_n.jpg"></div>
-                        <div class="swiper-slide"><img src="resources/photography/dark_bridge_by_dc4894-d55pp09.jpg" class="bigger_slide"></div>
-                        <div class="swiper-slide"><img src="resources/photography/beaded_by_dc4894-d6awbeo.jpg" class="bigger_slide"></div>
-                        <div class="swiper-slide"><img src="resources/photography/scattered_clouds_by_dc4894-d50vcqz.jpg" class="bigger_slide"></div>
-                        <div class="swiper-slide"><img src="resources/photography/sunset_by_dc4894-d4t9a07.jpg" class="bigger_slide"></div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <!-- end slider container-->
-                </div>
-            </div>
-            <div class="footer">
-                <p style="color: #FFFFFF; text-align: center;">
-            </div>
-            <!-- End More Section-->
 
-            <script>
-                const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                //direction: 'vertical',
-                loop: true,
+        .gallery {
+          display: grid;
+          margin: auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+          width: 80%;
+        }
 
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                });
-            </script>
+        .image-container {
+          overflow: hidden;
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transform: translateY(50px);
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+          transition-delay: var(--delay, 0s);  /* Use custom delay set in JS */
+        }
+
+        .image-container img {
+          width: 100%;
+          display: block;
+          transition: transform 0.3s;
+        }
+
+        .image-container.swipe-up {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        div#stem {
+          margin-bottom: 20px;
+        }
+
+    </style>
+
+<script>
+    function calculateAge(birthdate) {
+        const birthDate = new Date(birthdate);
+        const today = new Date();
+
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        const dayDiff = today.getDate() - birthDate.getDate();
+
+        // Adjust age if birthday hasn't occurred yet this year
+        if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+            age--;
+        }
+
+        return age;
+    }
+
+    // Insert current age into the webpage
+    document.addEventListener("DOMContentLoaded", function () {
+        const myBirthdate = "1994-04-08";
+        document.getElementById("age").textContent = calculateAge(myBirthdate);
+    });
+
+
+   
+</script>
+
+
+<script> // Image swipe effect
+  document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".image-container");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3  // Trigger when 30% of image is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Set a custom delay based on the image index for staggered effect
+        entry.target.style.setProperty("--delay", `${index * 0.2}s`);
+        entry.target.classList.add("swipe-up");
+        observer.unobserve(entry.target);  // Stop observing once animated
+      }
+    });
+  }, observerOptions);
+
+  images.forEach(image => observer.observe(image));
+});
+
+
+</script>
+
+</head>
+<body>
+
+    <!-- Landing-->
+    <div id="landing_container">
+        
+        <h1 id="name">Devin Cress</h1>
+
+        <p id="intro">I'm a <span id="age">30</span> year old paramedic, aviator, serial DIY'er, and engineering student.
+        </p>
+
+        <a class="menu" href="#work_education">Education and Work Experience</a><br>
+        <a class="menu" href="#projects">Projects</a><br>
+        <a class="menu" href="#renovations">Home Renovations</a><br>
+        <a class="menu" href="#prints">3D Prints</a><br>
+        <a class="menu" href="#recipes">Recipes</a><br>
+        <a class="menu" href="#STEMresources">STEM Resources</a>
+        
+    </div>
+    <br>
+    <!-- End Landing-->
+
+
+    <!-- Education and Work Experience-->
+
+    <div id="work_education">
+      <h2>Education and Work Experience</h2>
+    </div>
+
+    <section class="cd-timeline js-cd-timeline" id="work">
+        <div class="container max-width-lg cd-timeline__container">
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/wrench.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>Automotive Technician</h3>
+             <!-- <p class="color-contrast-medium"></p>-->
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Aug 2012 - August 2015</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/medical.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>EMT-B</h3>
+              <!--<p class="color-contrast-medium"></p>-->
+              
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">May 2015</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/medical.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>AEMT</h3>
+              <!--<p class="color-contrast-medium"></p>-->
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">May 2016</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/medical.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>EMT-I</h3>
+              <!--<p class="color-contrast-medium"></p>-->
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">May 2017</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/medical.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>Paramedic</h3>
+              <p class="color-contrast-medium">AAS-Paramedic, Central Virginia Community College</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">May 2018</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/gears.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>General Engineering</h3>
+              <p class="color-contrast-medium">Central Virginia Community College</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Jan 2020 - May 2022</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img">
+              <img src="resources/icons/pcb.png">
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h3>Electrical Engineering</h3>
+              <p class="color-contrast-medium">Virginia Tech</p>
+    
+              <div class="flex justify-between items-center">
+                <span class="cd-timeline__date">Aug 2022 - Present</span>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
         </div>
-    </body>
+      </section> <!-- cd-timeline -->
+      <script src="resources/js/main.js"></script>
 
+      <!--End Education and Work Experience-->
+
+
+      <!--Projects -->
+      <div class="container" id="projects">
+        <h2 id="projects">Projects</h2>
+
+        <div class="gallery">
+          <div class="image-container"><a href="-"><img src="resources/projects/3d_printer_board.jpg"></a></div>
+          <div class="image-container"><a href="-"><img src="resources/projects/ring_light.jpg"></a></div>
+        </div>
+      </div>
+      
+      <!--Projects-->
+
+
+      <!--Home Renovations-->
+      <div class="container" id="renovations">
+        <h2 id="renovations">Home Renovations</h2>
+
+        <div class="gallery">
+          <div class="image-container"><a href="-"><img src="resources/renovations/kithen_before.jpg"></a></div>
+          <div class="image-container"><a href="-"><img src="resources/renovations/kitchen_after.jpg"></a></div>
+        </div>
+        <div class="gallery">
+          <div class="image-container"><a href="-"><img src="resources/renovations/bathroom_shower_before.jpg"></a></div>
+          <div class="image-container"><a href="-"><img src="resources/renovations/bathroom_shower_after.jpg"></a></div>
+        </div>
+        <div class="gallery">
+          <div class="image-container"><a href="-"><img src="resources/renovations/front_door_before.jpg"></a></div>
+          <div class="image-container"><a href="-"><img src="resources/renovations/front_door_after.jpg"></a></div>
+        </div>
+        <div class="gallery">
+          <div class="image-container"><a href="-"><img src="resources/renovations/porch_before.jpg"></a></div>
+          <div class="image-container"><a href="-"><img src="resources/renovations/porch_after.jpg"></a></div>
+        </div>
+      </div>
+      
+
+      <!--End Home Renovations-->
+
+
+      <!--3D Prints-->
+      <div class="container">
+        <h2 id="prints">3D Prints</h2>
+        <p>Click to view on Thingiverse</p>
+        <div class="gallery">
+          <div class="image-container"><a href="https://www.thingiverse.com/thing:5970804"><img src="resources/3d_prints/test_tube_holder.png"></a></div>
+          <div class="image-container"><a href="https://www.thingiverse.com/thing:4968491"><img src="resources/3d_prints/solder_spool.jpg"></a></div>
+          <div class="image-container"><a href="https://www.thingiverse.com/thing:6853938"><img src="resources/3d_prints/hydra_extruder.png"></a></div>
+          <div class="image-container"><a href="https://www.thingiverse.com/thing:6939145"><img src="resources/3d_prints/cr_touch_mount.webp"></a></div>
+          <div class="image-container"><a href="https://www.thingiverse.com/yeetthemedic"><img src="resources/3d_prints/microscope_stand.jpg"></a></div>
+        </div>
+      </div>
+
+        
+      <!--End 3D Prints-->
+
+
+      <!--Recipes-->
+      <div class="container">
+        <h2 id="recipes">Recipes</h2>
+        <p>Click to view recipe</p>
+        <div class="gallery">
+          <div class="image-container"><a href="https://cooking.nytimes.com/recipes/1022053-croissants"><img src="resources/food/croissants.jpg"></a></div>
+          <div class="image-container"><a href="http://google.com"><img src="resources/food/rolls.jpg"></a></div>
+          <div class="image-container"><a href="http://google.com"><img src="resources/food/cinnamon_rolls.jpg"></a></div>
+          <div class="image-container"><a href="http://google.com"><img src="resources/food/molasses_cookies.jpg"></a></div>
+          <div class="image-container"><a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/"><img src="resources/food/blueberry_muffins.jpg"></a></div>
+        </div>
+    </div>
+      <!--End Recipes-->
+
+
+      <!--STEM Resources-->
+      <div class="container" id="stem">
+
+      </div>
+      <!--End STEM Resources-->
+</body>
 </html>
