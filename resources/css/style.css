@@ -22,7 +22,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     margin-top: 5vh;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-color: #202020;
     background-image: url("../self.jpg");
     background-repeat: no-repeat;
@@ -33,16 +33,35 @@ body {
 
 .container {
   width:fit-content;
+  min-height: 100vh;
   margin: auto;
   text-align: center;
 }
 
-
+/*
 @keyframes fadeToWhite {
     0% { color: firebrick; }
     100% { color: white; }
 }
+*/
 
+/*
+@keyframes heartbeat {
+  0%, 100% { color: white; }
+  20% { color: firebrick; }
+  40% { color: white; }
+  60% { color: firebrick; }
+  80% { color: white; }
+}
+*/
+
+@keyframes heartbeat {
+  0%, 100% { text-shadow: 5px 5px 5px #000000; } /* No shadow */
+  5% { text-shadow: 0 0 10px firebrick; } /* Red glow */
+  12% { text-shadow: 5px 5px 5px #000000; }
+  18% { text-shadow: 0 0 10px firebrick; }
+  30% { text-shadow: 5px 5px 5px #000000; } /* Pause */
+}
 
 h1 {
     font-size: 8vh;
@@ -50,12 +69,13 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #FFFFFF;
     text-shadow: 5px 5px 5px #000000;
-    animation: fadeToWhite 5s ease-in-out forwards;
+    /*animation: fadeToWhite 5s ease-in-out forwards;*/
+    animation: heartbeat 2s ease-in-out 3;
 }
 
 h2 {
   margin: 20px;
-  margin-top: 50px;
+  padding: 20px;
   color: #FFFFFF;
   text-shadow: 5px 5px 5px #000000;
   text-align: center;
