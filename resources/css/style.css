@@ -165,6 +165,16 @@ color:firebrick;
   transform: translateY(0);
 }
 
-div#stem {
-  margin-bottom: 20px;
+#stem_wrapper {
+  text-align: left;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 4vh;
+  color: #FFFFFF;
+}
+
+#stem_wrapper p {
+  margin: 10px;
 }
