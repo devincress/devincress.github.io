@@ -94,6 +94,14 @@ p#intro {
     color: #FFFFFF;
 }
 
+a {
+  color: firebrick;
+}
+
+a:hover {
+  color: #b24848
+}
+
 a.menu {
 color: #FFFFFF;
 font-size: 3.5vh;
@@ -177,4 +185,9 @@ h3 {
 
 #stem_wrapper p {
   margin: 10px;
+}
+
+.cd-timeline__content h3 {
+  color: #333333;
+  font-family:Arial, Helvetica, sans-serif;
 }
