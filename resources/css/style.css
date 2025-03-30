@@ -35,6 +35,7 @@ body {
   width:fit-content;
   min-height: 100vh;
   margin: auto;
+  margin-bottom: 10vh;
   text-align: center;
 }
 
@@ -179,7 +180,7 @@ color:firebrick;
 }
 
 h3 {
-  font-size: 4vh;
+  font-size: 3vh;
   color: #FFFFFF;
 }
 
